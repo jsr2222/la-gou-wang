@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 默认样式--提前设置好 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        img {
+            display: block;
+        }
+
+        input {
+            border: none;
+            outline: none;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .clearFixed:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        /* 伪元素 */
+        .btnRed:after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 21px;
+            margin-left: -10px;
+            border: 10px solid transparent;
+            border-bottom-color: #fff;
+        }
+
+        .btnWhite::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: 0px;
+            margin-left: -10px;
+            border: 10px solid transparent;
+            border-bottom-color: #00B38A;
+        }
+
+
+        body{background: #f8f9fc;}
+
+        .header {
+            height: 360px;
+            background: #00b38a;
+        }
+        .boxCon {
+            position: absolute;
+            top: 77px;
+            left: 50%;
+            margin-left: -350px;
+            width: 700px;
+            height: 490px;
+            background: pink;
+        }
+
+        .boxCon .logo {
+            height: 77px;
+            background: red url("img2/logo.png") no-repeat;
+        }
+
+        .boxCon .forBox {
+            height: 400px;
+            background: skyblue;
+            border: 1px solid #dce1e6;
+            padding: 6px;
+        }
+
+        .boxCon .forBox .imgBox img {
+            margin-right: -5px;
+        }
+
+        .boxCon .forBox .imgBox img:nth-child(2) {
+            margin-top: -5px;
+        }
+
+        .boxCon .forBox .inpLeft {
+            position: relative;
+            width: 289px;
+            height: 277px;
+            padding: 0px 63px;
+            background: purple;
+            border-right:1px dashed #555;
+        }
+
+        .boxCon .forBox .inpLeft .or {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            line-height: 18px;
+            left: 406px;
+            top: 50%;
+            margin-top: -6px;
+            background: #fff;
+        }
+
+        .boxCon .forBox .inpLeft .line1 {
+            height: 40px;
+            border-bottom: 1px solid #555;
+            font-size: 18px;
+            color: #555;
+            line-height: 40px;
+        }
+
+        .boxCon .forBox .inpLeft .line1 p {
+            width: 145px;
+            text-align: center;
+            position: relative;
+        }
+
+        .boxCon .forBox .inpLeft .line1 p:nth-child(1) {
+            color: #00B38A;
+            border-bottom: 1px solid #00B38A;
+        }
+
+        .boxCon .forBox .inpLeft .lineInp {
+            height: 64px;
+            border-bottom: 1px solid #555;
+        }
+
+        .boxCon .forBox .inpLeft .txt {
+            color: #00b38a;
+            height: 58px;
+            line-height: 58px;
+            font-size: 12px;
+            text-align: right;
+        }
+
+        .boxCon .forBox .inpLeft input[type="submit"] {
+            height: 48px;
+            width: 100%;
+            background: #00B38A;
+            color: #fff;
+            text-align: center;
+            line-height: 48px;
+            font-size: 18px;
+        }
+
+        .boxCon .forBox .inpLeft .lineInp input {
+            width: 100%;
+            height: 44px;
+            padding-top: 20px;
+        }
+
+        .boxCon .forBox .inpRight {
+            width: 218px;
+            height: 277px;
+            background: yellow;
+            padding-left: 52px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="boxCon">
+        <div class="logo"></div>
+        <form action="#" method="get">
+            <div class="forBox">
+                <div class="imgBox clearFixed">
+                    <img class="fl" src="img2/qrcode-normal.svg" alt="">
+                    <img class="fl" src="img2/wx-login.svg" alt="">
+                </div>
+                <div class="inpLeft fl">
+                    <div class="line1">
+                        <p class="fl btnRed btnWhite">密码登录</p>
+                        <p class="fl">验证码登录</p>
+                    </div>
+                    <div class="lineInp">
+                        <input type="text" placeholder="请输入常用手机号或邮箱">
+                    </div>
+                    <div class="lineInp">
+                        <input type="password" placeholder="请输入密码">
+                    </div>
+                    <p class="txt">忘记密码?</p>
+                    <input type="submit" value="登录">
+                    <span class="or">or</span>
+                </div>
+                
+                <div class="inpRight fl">
+
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
