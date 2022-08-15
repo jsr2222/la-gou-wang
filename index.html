@@ -6,63 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>拉勾网</title>
-    <style type="text/css">
-        /* 默认样式--提前设置好 */
-        * {
-            margin: 0;
-            padding: 0;
-        }
+    <link href="./css/main.css" rel="stylesheet" type="text/css" />
+    <link href="./css/Home/header.css" rel="stylesheet" type="text/css" />
+    <link href="./css/Home/search.css" rel="stylesheet" type="text/css" />
+    <link href="./css/Home/banner.css" rel="stylesheet" type="text/css" />
+    <link href="./css/Home/content.css" rel="stylesheet" type="text/css" />
+    <link href="./css/Home/footer.css" rel="stylesheet" type="text/css" />
 
-        p,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        dl,
-        dt,
-        dd,
-        ol,
-        ul,
-        li {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        li {
-            list-style: none;
-        }
-
-        a {
-            text-decoration: none;
-            color: #000;
-        }
-
-        img {
-            display: block;
-        }
-
-        input {
-            border: none;
-            outline: none;
-        }
-
-        .fl {
-            float: left;
-        }
-
-        .fr {
-            float: right;
-        }
-
-        .clearFixed:after {
-            content: "";
-            display: block;
-            clear: both;
-        }
-
-
+    <style>
         /* 版心 */
         .main {
             width: 1200px;
@@ -73,724 +24,6 @@
         .color {
             color: #00b38a;
         }
-
-        /* 头部导航样式 */
-        /* #region */
-
-        .header {
-            height: 160px;
-            background-color: #990;
-        }
-
-        .header .h_top {
-            height: 40px;
-            background: #32373e;
-        }
-
-        .header .h_top .topCon {
-            height: 40px;
-        }
-
-        .header .h_top .topCon .conLeft {
-            height: 40px;
-            line-height: 40px;
-        }
-
-        .header .h_top .topCon .conLeft .leftTxt1 {
-            height: 40px;
-        }
-
-        .header .h_top .topCon .conLeft .leftTxt1 .logo {
-            font-size: 22px;
-            color: #00b38a;
-            margin-right: 32px;
-        }
-
-        .header .h_top .topCon .conLeft .leftTxt1 .city {
-            font-size: 12px;
-            color: #00b38a;
-            margin-right: 14px;
-        }
-
-        .header .h_top .topCon .conLeft .leftTxt1 .chage-city {
-            font-size: 11px;
-            color: #afb5c0;
-            margin-right: 36px;
-        }
-
-        .header .h_top .topCon .conLeft .ulList {
-            font-size: 14px;
-        }
-
-        .header .h_top .topCon .conLeft .ulList li {
-            float: left;
-            width: 70px;
-            /* 让文字左右居中 */
-            text-align: center;
-        }
-
-        .header .h_top .topCon .conLeft .ulList li a {
-            color: #afb5c0;
-        }
-
-        .header .h_top .topCon .conLeft .ulList li:first-child {
-            background: #24282c;
-        }
-
-        .header .h_top .topCon .conLeft .ulList li:first-child a {
-            color: #ffffff;
-        }
-
-        .header .h_top .topCon .conRight {
-            height: 40px;
-        }
-
-        .header .h_top .topCon .conRight .ulList {
-            line-height: 40px;
-            font-size: 14px;
-        }
-
-        .header .h_top .topCon .conRight .ulList li {
-            float: left;
-
-        }
-
-        .header .h_top .topCon .conRight .ulList li a {
-            display: block;
-            color: #afb5c0;
-        }
-
-        .header .h_top .topCon .conRight .ulList li .btn span {
-            float: left;
-            width: 18px;
-            height: 18px;
-            margin-top: 12px;
-            margin-right: 2px;
-            background-image: url(img/sprite.png);
-            /* 让背景图以不重复的方式展示 */
-            background-repeat: no-repeat;
-            background-position: -8px -31px;
-            background-size: 58px 100px;
-        }
-
-        .header .h_top .topCon .conRight .ulList li .register {
-            margin-right: 40px;
-        }
-
-        .header .h_top .topCon .conRight .ulList li .register span {
-            padding: 0px 12px;
-            color: #544a44;
-        }
-
-        .header .h_top .topCon .conRight .ulList li .app {
-            color: #00b38a;
-            margin-right: 25px;
-        }
-
-        .header .h_top .topCon .conRight .ulList li .app span {
-            float: left;
-            width: 15px;
-            height: 20px;
-            margin-top: 10px;
-            margin-right: 2px;
-            background-image: url(img/sprite.png);
-            background-repeat: no-repeat;
-            background-position: -37px -34px;
-            background-size: 65px 113px;
-        }
-
-        .header .h_top .topCon .conRight .ulList li:last-child {
-            margin-right: 8px;
-        }
-
-        .header .h_bottom {
-            height: 120px;
-            background: #00b38a;
-        }
-
-        .header .h_bottom .botCon {
-            height: 120px;
-        }
-
-        .header .h_bottom .botCon .conLeft {
-            position: relative;
-            width: 566px;
-            height: 120px;
-            background: url("img/logo.png") no-repeat;
-            background-size: 226px 100%;
-        }
-
-        .header .h_bottom .botCon .conLeft .imgBox {
-            /* 子绝父相 */
-            position: absolute;
-            top: 32px;
-            left: 232px;
-        }
-
-        .header .h_bottom .botCon .conLeft .imgBox img {
-            max-height: 27px;
-        }
-
-        .header .h_bottom .botCon .conLeft .txtBox {
-            position: absolute;
-            top: 76px;
-            left: 232px;
-            font-size: 12px;
-            color: #fff;
-        }
-
-        .header .h_bottom .botCon .conRight {
-            width: 453px;
-            height: 120px;
-            position: relative;
-        }
-
-        .header .h_bottom .botCon .conRight .btnBox {
-            position: absolute;
-            top: 50%;
-            margin-top: -18px;
-            height: 36px;
-            width: 100%;
-            color: #757575;
-            font-size: 12px;
-        }
-
-        .header .h_bottom .botCon .conRight .btnBox .txt1 {
-            width: 163px;
-            height: 36px;
-            margin-right: 20px;
-            /* 让输入框里面的文字缩近 */
-            text-indent: 10px;
-        }
-
-        .header .h_bottom .botCon .conRight .btnBox .pBtn {
-            width: 146px;
-            height: 36px;
-            margin-right: 9px;
-            background: #fff;
-        }
-
-        .header .h_bottom .botCon .conRight .btnBox .pBtn .txt2 {
-            width: 94px;
-            height: 36px;
-            text-indent: 10px;
-        }
-
-        .header .h_bottom .botCon .conRight .btnBox .pBtn .aTxt2 {
-            padding: 6px 3px 9px;
-        }
-
-        .header .h_bottom .botCon .conRight .btnBox .btnSub {
-            width: 107px;
-            height: 36px;
-            border: 1px solid #ccefe7;
-            /* 背景颜色透明 */
-            background: transparent;
-            color: #757575;
-        }
-
-        /* #endregion */
-
-        /* 搜索区域 */
-        /* #region */
-        .search {
-            background: #f2f5f4;
-        }
-
-        .searCon {
-            height: 102px;
-
-            padding-top: 30px;
-        }
-
-        .searCon .search {
-            width: 937px;
-            height: 47px;
-            margin-left: 133px;
-        }
-
-        .searCon .search .searchInp {
-            width: 794px;
-            height: 45px;
-            border: 1px solid #e8e8e8;
-            text-indent: 15px;
-        }
-
-        .searCon .search .btn {
-            width: 141px;
-            height: 47px;
-            /* 上下居中 */
-            line-height: 47px;
-            /* 左右居中 */
-            text-align: center;
-            color: #fff;
-            font-size: 18px;
-            background: #00b38a;
-        }
-
-        .searCon .searList {
-            margin-left: 133px;
-            font-size: 12px;
-            margin-top: 12px;
-        }
-
-        .searCon .searList li {
-            float: left;
-            margin-right: 20px;
-        }
-
-        .searCon .searList li a {
-            color: #00b38a;
-        }
-
-        .searCon .searList .hot-search {
-            color: #777;
-        }
-
-        /* #endregion */
-
-        /* 轮播图区域 */
-        /* #region */
-        .bannCon {
-            padding-top: 46px;
-        }
-
-        .bannCon .banLeft {
-            width: 300px;
-        }
-
-        .bannCon .banLeft .banList {
-            font-size: 12px;
-        }
-
-        .bannCon .banLeft .banList li {
-            margin-top: 0px;
-            padding-bottom: 24px;
-        }
-
-        .bannCon .banLeft .banList li a {
-            color: #555;
-            margin-right: 26px;
-        }
-
-        .bannCon .banLeft .banList li span {
-            font-family: "宋体";
-            color: #555;
-            margin-top: 7px;
-        }
-
-        .bannCon .banLeft .banList li a:first-child {
-            font-size: 17px;
-            margin-right: 13px;
-        }
-
-        .bannCon .banRight {
-            position: relative;
-            width: 840px;
-            height: 347px;
-        }
-
-        .bannCon .banRight .banImgBox {
-            width: 840px;
-            height: 347px;
-
-        }
-
-        .bannCon .banRight .banImgBox .banImg {
-            width: 100%;
-            height: 100%;
-        }
-
-        .bannCon .banRight span {
-            /* **********将元素定位到垂直居中的方法*********** */
-            position: absolute;
-            top: 50%;
-            margin-top: -17px;
-            /* ********************************************* */
-            width: 22px;
-            height: 34px;
-            font-size: 34px;
-            color: #757478;
-            font-family: "宋体";
-            display: none;
-        }
-
-        /* 只有鼠标移到上面才会显示 */
-        .bannCon .banRight:hover span {
-            display: block;
-        }
-
-        .bannCon .banRight .btnRight {
-            right: 20px;
-        }
-
-        .bannCon .banRight .btnLeft {
-            left: 20px;
-        }
-
-        /* #endregion */
-
-        /* 内容区域第一大块 */
-        /* #region */
-        .content .block1 {
-            margin-top: 44px;
-        }
-
-        .content .title .top1 {
-            height: 35px;
-            border-bottom: 1px solid #e8e8e8;
-        }
-
-        .content .title .top1 a {
-            font-size: 15px;
-            color: #757478;
-        }
-
-        .content .title .top1 a:first-child {
-            margin-right: 60px;
-            padding-bottom: 13px;
-            border-bottom: 2px solid #000;
-            color: #000;
-        }
-
-        .content .title .top2 {
-            height: 65px;
-            font-size: 12px;
-        }
-
-        .content .title .top2 .logo {
-            width: 18px;
-            height: 18px;
-            background: #e6e6e6;
-            color: #fff;
-            margin-top: 24px;
-            /* 水平居中 */
-            text-align: center;
-            border-radius: 50%;
-            margin-right: 14px;
-        }
-
-        .content .title .top2 .slogan {
-            color: #999;
-            height: 65px;
-            line-height: 65px;
-            margin-right: 56px;
-        }
-
-        .content .title .top2 a {
-            color: #00b38a;
-
-
-        }
-
-        .content .block1 {
-            margin-bottom: 50px;
-        }
-
-        .content .block1 .conBlock li {
-            margin-bottom: 17px;
-        }
-
-        .content .block1 .conBlock li .conBox {
-            width: 351px;
-            height: 160px;
-            border: 1px solid #eaeeed;
-            margin-right: 13px;
-            padding: 23px 17px 17px 17px;
-        }
-
-        .content .block1 .conBlock li .last {
-            margin-right: 0px;
-        }
-
-        .content .block1 .conBlock li .conBox .job {
-            font-size: 15px;
-        }
-
-        .content .block1 .conBlock li .conBox .job .jobTxt {
-            color: #777;
-        }
-
-        .content .block1 .conBlock li .conBox .job .time {
-            font-size: 11px;
-            margin: 0px 8px;
-            color: #9999b2;
-        }
-
-        .content .block1 .conBlock li .conBox .job .money {
-            font-size: 12px;
-            color: #fa6041
-        }
-
-        .content .block1 .conBlock li .conBox .btn {
-            color: #777;
-            font-size: 12px;
-            margin: 10px 0px;
-        }
-
-        .content .block1 .conBlock li .conBox .pBor {
-            border-bottom: 1px dashed #e0e0e0;
-            padding-bottom: 18px;
-        }
-
-        .content .block1 .conBlock li .conBox .box {
-            display: block;
-            color: #9999b2;
-            font-size: 11px;
-            border: 1px solid #f0f0f0;
-            border-radius: 2px;
-            height: 26px;
-            width: 71px;
-            text-align: center;
-            line-height: 26px;
-            margin-right: 10px;
-        }
-
-        .content .block1 .conBlock li .conBox .imgBox {
-            padding-top: 12px;
-        }
-
-        .content .block1 .conBlock li .conBox .imgBox img {
-            width: 40px;
-            height: 40px;
-            padding-right: 18px;
-        }
-
-        .content .block1 .conBlock li .conBox .txt1 {
-            color: #555;
-            font-size: 12px;
-            margin-bottom: 6px;
-        }
-
-        .content .block1 .conBlock li .conBox .txt2 {
-            color: #9999b2;
-            font-size: 12px;
-        }
-
-        .content .more {
-            width: 388px;
-            height: 42px;
-            border: 1px solid #00b38a;
-            margin: 0 auto;
-            text-align: center;
-            line-height: 42px;
-            color: #00b38a;
-        }
-
-        /* #endregion */
-
-        /* 内容区域第二大块 */
-        /* #region */
-        .content .block2  ul {
-            margin-bottom: 16px;
-        }
-
-        .content .block2 .conBlock2 .gap {
-            margin-right: 16px;
-        }
-
-        .content .block2 .conBlock2 .contentBox {
-            width: 246px;
-            height: 244px;
-            border: 1px solid #eeeeee;
-            padding: 12px 20px;
-            text-align: center;
-        }
-
-        .content .block2 .conBlock2 .contentBox img {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto;
-            margin-bottom: 16px;
-        }
-
-        .content .block2 .conBlock2 .contentBox .txt1 {
-            font-size: 12px;
-            color: #999;
-            margin-top: 10px;
-            margin-bottom: 12px;
-        }
-
-        .content .block2 .conBlock2 .contentBox .txt2 {
-            font-size: 12px;
-            color: #555;
-            /* 实现超出部分内容省略（以下三句） */
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            /* ============================== */
-            padding-bottom: 16px;
-            border-bottom: 1px dashed #e0e0e0;
-        }
-
-        .content .block2 .conBlock2 .contentBox .listCon .box1 {
-            width: 72px;
-            height: 30px;
-            text-align: center;
-            font-size: 12px;
-            color: #999;
-            margin-top: 16px;
-        }
-
-        .content .block2 .conBlock2 .contentBox .listCon .line {
-            border-right: 1px solid #e0e0e0;
-        }
-
-        .content .block2 .conBlock2 .contentBox .listCon .box1 p {
-            color: #00b38a;
-        }
-
-        .block3 .line3 {
-            margin-top: 40px;
-        }
-        
-        .content .block3 .content3 {
-            font-size: 12px;
-            padding-top: 30px;
-        }
-
-        .content .block3 .content3 a {
-            color: #555;
-            margin-right: 18px;
-        }
-
-        .content .block3 .content3 .open {
-            color: #99a5c2;
-        }
-
-        .content .block3 .content3 .open img {
-            margin-top: 4px;
-            margin-left: 4px;
-        }
-        /* #endregion */
-    
-        /* footer区域 */
-        /* #region */
-        .footer {
-            border-top: 1px solid #ebebeb;
-            margin-top: 70px;
-        }
-
-        .footer .footer1 {
-            height: 286px;
-            padding-top: 50px;
-        }
-
-        .footer .footer1 .appBox {
-            width: 314px;
-            height: 170px;
-            margin-right: 130px;
-            border-right: 1px solid #e8e8e8;
-
-        }
-
-        .footer .footer1 .appBox .btnApp {
-            width: 180px;
-            height: 44px;
-            border: 1px solid #00b38a;
-            line-height: 44px;
-            text-align: center;
-            margin-bottom: 17px;
-        }
-
-        .footer .footer1 .appBox .btnApp span {
-            float: left;
-            width: 12px;
-            height: 15px;
-            background: url(img/sprite2.png) no-repeat;
-            margin-left: 38px;
-            margin-top: 14px;
-        }
-        .footer .footer1 .appBox .btnApp:nth-child(1) span {
-            background-position: -150px -220px;
-        }
-
-        .footer .footer1 .appBox .btnApp:nth-child(2) span {
-            background-position: -216px -54px;
-        }
-
-        .footer .footer1 .appBox .btnTxt {
-            font-size: 12px;
-            color: #555;
-        }
-
-        .footer .footer1 .appBox .btnTxt img {
-            display: inline-block;
-            margin-right: 5px;
-        }
-
-        .footer .footer1 .appBox .btnTxt img:nth-child(2) {
-            margin-left: 28px;
-        }
-
-        .footer .footer1 dl dt {
-            font-size: 16px;
-            margin-bottom: 32px;
-            color: #555;
-        }
-
-        .footer .footer1 dl dd {
-            font-size: 12px;
-            margin-bottom: 15px;
-        }
-
-        .footer .footer1 .dlCen {
-            margin:0px  170px;
-            color: #555;
-        }
-
-        .footer .footer2 {
-            height: 100px;
-            background: #fafafa;
-        }
-
-        .footer .footer2 .bottCon {
-            font-size: 12px;
-            height: 100px;
-            color: #c0a599;
-        }
-        
-        .footer .footer2 .bottCon > p {
-            margin-top: 50px;
-            margin-right: 20px;
-        }
-
-        .footer .footer2 .bottCon p span {
-            background: url("img/sprite2.png") no-repeat;
-        } 
-
-        .footer .footer2 .bottCon .txtP2 span {
-            width: 16px;
-            height: 16px;
-            background-position: -150px -184px;
-            
-        }
-
-        .footer .footer2 .bottCon .txtBox {
-            width: 186px;
-            height: 58px;
-            border: 1px solid #555;
-            margin-top: 28px;
-        }
-
-        .footer .footer2 .bottCon .txtBox span {
-            width: 20px;
-            height: 24px;
-            background: url("img/sprite2.png");  
-            background-position: -132px -20px;
-            margin-top: 18px;
-            margin-left: 20px;
-        }
-
-        .footer .footer2 .bottCon .txtBox p {
-            margin-top: 8px;
-            margin-left: 10px;
-        }
-
-        .footer .footer2 .bottCon .imgBox {
-            margin-top: 50px;
-        } 
-        /* #endregion */
     </style>
 </head>
 
@@ -800,14 +33,14 @@
         <div class="header ">
             <div class="h_top">
                 <!-- 子级浮动，必须给父级添加清楚浮动 -->
-                <div class="topCon main clearFixed">
-                    <div class="conLeft fl">
-                        <div class="leftTxt1 fl">
+                <div class="topCon main ">
+                    <div class="conLeft ">
+                        <div class="leftTxt1 ">
                             <a class="logo" href="#">拉钩</a>
                             <a class="city" href="#">全国站</a>
                             <a class="chage-city" href="#">[切换城市]</a>
                         </div>
-                        <ul class="ulList clearFixed fl">
+                        <ul class="ulList ">
                             <li><a href="#">首页</a></li>
                             <li><a href="#">公司</a></li>
                             <li><a href="#">校园</a></li>
@@ -815,10 +48,9 @@
                             <li><a href="#">课程</a></li>
                         </ul>
                     </div>
-                    <div class="conRight fr">
-                        <ul class="ulList clearFixed">
-                            <li><a href="#" class="login btn"><span></span> 登录</a></li>
-                            <li><a href="#" class="register"><span>|</span> 注册</a></li>
+                    <div class="conRight ">
+                        <ul class="ulList ">
+                            <li><a href="#" class="login btn"><span></span> 登录 | 注册</a></li>
                             <li><a href="#" class="app btn"><span></span> 拉钩APP</a></li>
                             <li><a href="#">进入企业版</a></li>
                         </ul>
@@ -1166,7 +398,7 @@
                 </div>
                 <ul class="conBlock2 clearFixed first">
                     <li>
-                        <div class="contentBox fl gap">
+                        <div class="contentBox">
                             <img src="img/con2.png" alt="">
                             <span class="spa1">数据堂</span>
                             <p class="txt1">数据服务，消费生活/B轮</p>
@@ -1186,7 +418,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contentBox fl gap">
+                        <div class="contentBox">
                             <img src="img/con2.png" alt="">
                             <span class="spa1">数据堂</span>
                             <p class="txt1">数据服务，消费生活/B轮</p>
@@ -1206,7 +438,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contentBox fl gap">
+                        <div class="contentBox">
                             <img src="img/con2.png" alt="">
                             <span class="spa1">数据堂</span>
                             <p class="txt1">数据服务，消费生活/B轮</p>
@@ -1226,7 +458,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contentBox fl">
+                        <div class="contentBox">
                             <img src="img/con2.png" alt="">
                             <span class="spa1">数据堂</span>
                             <p class="txt1">数据服务，消费生活/B轮</p>
@@ -1250,7 +482,7 @@
                 </ul>
                 <ul class="conBlock2 clearFixed">
                     <li>
-                        <div class="contentBox fl gap">
+                        <div class="contentBox">
                             <img src="img/con2.png" alt="">
                             <span class="spa1">数据堂</span>
                             <p class="txt1">数据服务，消费生活/B轮</p>
@@ -1270,7 +502,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contentBox fl gap">
+                        <div class="contentBox">
                             <img src="img/con2.png" alt="">
                             <span class="spa1">数据堂</span>
                             <p class="txt1">数据服务，消费生活/B轮</p>
@@ -1290,7 +522,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contentBox fl gap">
+                        <div class="contentBox">
                             <img src="img/con2.png" alt="">
                             <span class="spa1">数据堂</span>
                             <p class="txt1">数据服务，消费生活/B轮</p>
@@ -1310,7 +542,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contentBox fl">
+                        <div class="contentBox">
                             <img src="img/con2.png" alt="">
                             <span class="spa1">数据堂</span>
                             <p class="txt1">数据服务，消费生活/B轮</p>
@@ -1339,30 +571,34 @@
                     <div class="top1 line3">
                         <a href="#">友情链接</a>
                     </div>
-                </div> 
-                <div class="content3 clearFixed">
-                    <a href="#">拉勾网</a>
-                    <a href="#">拉勾网</a>
-                    <a href="#">拉勾网</a>
-                    <a href="#">拉勾网</a>
-                    <a href="#">拉勾网</a>
-                    <a href="#">拉勾网</a>
-                    <a href="#">拉勾网</a>
-                    <a href="#">拉勾网</a>
-                    <a href="#">拉勾网</a>
-                    <a href="#">拉勾网</a>
-                    <a href="#">拉勾网</a>
-                    <a href="#">拉勾网</a>
-                    <a href="#">拉勾网</a>
-                    <a href="#">拉勾网</a>
-                    <p class="fr open">展开<img src="img2/open.jpg" alt="" class="fr"></p>
+                </div>
+                <div class="content3">
+                    <div class="left">
+                        <a href="#">拉勾网</a>
+                        <a href="#">拉勾网</a>
+                        <a href="#">拉勾网</a>
+                        <a href="#">拉勾网</a>
+                        <a href="#">拉勾网</a>
+                        <a href="#">拉勾网</a>
+                        <a href="#">拉勾网</a>
+                        <a href="#">拉勾网</a>
+                        <a href="#">拉勾网</a>
+                        <a href="#">拉勾网</a>
+                        <a href="#">拉勾网</a>
+                        <a href="#">拉勾网</a>
+                        <a href="#">拉勾网</a>
+                        <a href="#">拉勾网</a>
+                    </div>
+                    <div class="right">
+                        <p class="fr open">展开<img src="img2/open.jpg" alt="" class="fr"></p>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- 尾部导航栏区域 -->
-        <div class="footer main">
-            <div class="footer1 clearFixed">
-                <div class="appBox fl">
+        <div class="footer">
+            <div class="footer1 main">
+                <div class="appBox ">
                     <p class="btnApp"><span></span> 下载拉钩APP</p>
                     <p class="btnApp"><span></span> 微信小程序</p>
                     <p class="btnTxt">
@@ -1370,38 +606,42 @@
                         <img src="img2/icon-sina1.png" alt=""> 拉钩微博
                     </p>
                 </div>
-                <dl class="fl">
-                    <dt>企业服务</dt>
-                    <dd>招聘抢人宝典</dd>
-                    <dd>公司搜索</dd>
-                    <dd>拉钩APP</dd>
-                </dl>
-                <dl class="fl dlCen">
-                    <dt>用户帮助</dt>
-                    <dd>帮助中心</dd>
-                    <dd>用户服务协议</dd>
-                    <dd>隐私政策</dd>
-                    <dd>在线提问</dd>
-                </dl>
-                <dl class="fl">
-                    <dt>联系方式</dt>
-                    <dd>服务热线：4006 2828 35 (9:00-18:00)</dd>
-                    <dd>企业服务邮箱：cc@lagou.com</dd>
-                    <dd>联系我们</dd>
-                </dl>
+                <div class="right">
+                    <dl>
+                        <dt>企业服务</dt>
+                        <dd>招聘抢人宝典</dd>
+                        <dd>公司搜索</dd>
+                        <dd>拉钩APP</dd>
+                    </dl>
+                    <dl>
+                        <dt>用户帮助</dt>
+                        <dd>帮助中心</dd>
+                        <dd>用户服务协议</dd>
+                        <dd>隐私政策</dd>
+                        <dd>在线提问</dd>
+                    </dl>
+                    <dl>
+                        <dt>联系方式</dt>
+                        <dd>服务热线：4006 2828 35 (9:00-18:00)</dd>
+                        <dd>企业服务邮箱：cc@lagou.com</dd>
+                        <dd>联系我们</dd>
+                    </dl>
+                </div>
             </div>
             <div class="footer2">
-                <div class="bottCon main clearFixed">
-                    <p class="txtP1 fl">&copy;2018拉勾网 京TCP备12312323</p>
-                    <p class="txtP2 fl"><span class="fl"></span> 京公网安备 11010802024043号</p>
-                    <div class="txtBox fl">
-                        <span class="fl"></span>
-                        <p class="fl">违法和不良信息举报<br>
-                                      电话：4007878<br>
-                                      邮箱：cc@lagou.com<br>
-                        </p>
+                <div class="bottCon main">
+                    <div class="left">
+                        <p class="txtP1">&copy;2018拉勾网 京TCP备12312323</p>
+                        <p class="txtP2"><span class="fl"></span> 京公网安备 11010802024043号</p>
+                        <div class="txtBox">
+                            <span class="fl"></span>
+                            <p>违法和不良信息举报<br>
+                                电话：4007878<br>
+                                邮箱：cc@lagou.com<br>
+                            </p>
+                        </div>
                     </div>
-                    <div class="fr imgBox"><img src="img/footer_lagou.png" alt=""></div>
+                    <div class="imgBox"><img src="img/footer_lagou.png" alt=""></div>
                 </div>
             </div>
         </div>

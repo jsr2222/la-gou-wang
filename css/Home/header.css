@@ -1,0 +1,203 @@
+/* 头部导航样式 */
+        /* #region */
+
+        .header {
+            height: 160px;
+            background: #00b38a;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .header .h_top {
+            height: 40px;
+            background: #32373e;
+        }
+
+        .header .h_top .topCon {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header .h_top .topCon .conLeft {
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .header .h_top .topCon .conLeft .leftTxt1 {
+            display: flex;
+            justify-content: space-around;
+            height: 40px;
+            width: 360px;
+        }
+
+        .header .h_top .topCon .conLeft .leftTxt1 .logo {
+            font-size: 22px;
+            color: #00b38a;
+        }
+
+        .header .h_top .topCon .conLeft .leftTxt1 .city {
+            font-size: 15px;
+            color: #00b38a;
+        }
+
+        .header .h_top .topCon .conLeft .leftTxt1 .chage-city {
+            font-size: 14px;
+            color: #afb5c0;
+        }
+
+        .header .h_top .topCon .conLeft .ulList {
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header .h_top .topCon .conLeft .ulList li {
+            /* float: left; */
+            width: 70px;
+            /* 让文字左右居中 */
+            text-align: center;
+        }
+
+        .header .h_top .topCon .conLeft .ulList li a {
+            color: #afb5c0;
+        }
+
+        .header .h_top .topCon .conLeft .ulList li:first-child {
+            background: #24282c;
+        }
+
+        .header .h_top .topCon .conLeft .ulList li:first-child a {
+            color: #ffffff;
+        }
+
+
+        .header .h_top .topCon .conRight .ulList {
+            display: flex;
+            justify-content: space-between;
+            width: 350px;
+            line-height: 40px;
+            font-size: 14px;
+        }
+
+        .header .h_top .topCon .conRight .ulList li a {
+            display: block;
+            color: #afb5c0;
+        }
+
+        .header .h_top .topCon .conRight .ulList li .btn span {
+            float: left;
+            width: 18px;
+            height: 18px;
+            margin-top: 12px;
+            margin-right: 2px;
+            background-image: url(../../img/sprite.png);
+            /* 让背景图以不重复的方式展示 */
+            background-repeat: no-repeat;
+            background-position: -8px -31px;
+            background-size: 58px 100px;
+        }
+
+  
+        .header .h_top .topCon .conRight .ulList li .app {
+            color: #00b38a;
+        }
+
+        .header .h_top .topCon .conRight .ulList li .app span {
+            float: left;
+            width: 15px;
+            height: 20px;
+            margin-top: 10px;
+            margin-right: 2px;
+            background-image: url(../../img/sprite.png);
+            background-repeat: no-repeat;
+            background-position: -37px -34px;
+            background-size: 65px 113px;
+        }
+
+        .header .h_bottom .botCon{
+            height: 120px;
+            display: flex;
+            justify-content: space-between;
+            background: #00b38a;
+
+        }
+
+        .header .h_bottom .botCon .conLeft {
+            position: relative;
+            width: 566px;
+            height: 120px;
+            background: url("../../img/logo.png") no-repeat;
+            background-size: 226px 100%;
+        }
+
+        .header .h_bottom .botCon .conLeft .imgBox {
+            /* 子绝父相 */
+            position: absolute;
+            top: 32px;
+            left: 232px;
+        }
+
+        .header .h_bottom .botCon .conLeft .imgBox img {
+            max-height: 27px;
+        }
+
+        .header .h_bottom .botCon .conLeft .txtBox {
+            position: absolute;
+            top: 76px;
+            left: 232px;
+            font-size: 12px;
+            color: #fff;
+        }
+
+        .header .h_bottom .botCon .conRight {
+            width: 453px;
+            height: 120px;
+            position: relative;
+        }
+
+        .header .h_bottom .botCon .conRight .btnBox {
+            position: absolute;
+            top: 50%;
+            margin-top: -18px;
+            height: 36px;
+            width: 100%;
+            color: #757575;
+            font-size: 12px;
+        }
+
+        .header .h_bottom .botCon .conRight .btnBox .txt1 {
+            width: 163px;
+            height: 36px;
+            margin-right: 20px;
+            /* 让输入框里面的文字缩近 */
+            text-indent: 10px;
+        }
+
+        .header .h_bottom .botCon .conRight .btnBox .pBtn {
+            width: 146px;
+            height: 36px;
+            margin-right: 9px;
+            background: #fff;
+        }
+
+        .header .h_bottom .botCon .conRight .btnBox .pBtn .txt2 {
+            width: 94px;
+            height: 36px;
+            text-indent: 10px;
+        }
+
+        .header .h_bottom .botCon .conRight .btnBox .pBtn .aTxt2 {
+            padding: 6px 3px 9px;
+        }
+
+        .header .h_bottom .botCon .conRight .btnBox .btnSub {
+            width: 107px;
+            height: 36px;
+            border: 1px solid #ccefe7;
+            /* 背景颜色透明 */
+            background: transparent;
+            color: #757575;
+        }
+
+        /* #endregion */

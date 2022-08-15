@@ -1,0 +1,81 @@
+        /* 轮播图区域 */
+        /* #region */
+        .bannCon {
+            padding-top: 46px;
+            height: 360px;
+        }
+
+        .bannCon .banLeft {
+            width: 300px;
+            
+        }
+
+        .bannCon .banLeft .banList {
+            font-size: 12px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .bannCon .banLeft .banList li a {
+            color: #555;
+            margin-right: 26px;
+        }
+
+        .bannCon .banLeft .banList li span {
+            font-family: "宋体";
+            color: #555;
+            margin-top: 7px;
+        }
+
+        .bannCon .banLeft .banList li a:first-child {
+            font-size: 17px;
+            margin-right: 13px;
+        }
+
+        .bannCon .banRight {
+            position: relative;
+            width: 840px;
+            height: 347px;
+        }
+
+        .bannCon .banRight .banImgBox {
+            width: 840px;
+            height: 347px;
+
+        }
+
+        .bannCon .banRight .banImgBox .banImg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .bannCon .banRight span {
+            /* **********将元素定位到垂直居中的方法*********** */
+            position: absolute;
+            top: 50%;
+            margin-top: -17px;
+            /* ********************************************* */
+            width: 22px;
+            height: 34px;
+            font-size: 34px;
+            color: #757478;
+            font-family: "宋体";
+            display: none;
+        }
+
+        /* 只有鼠标移到上面才会显示 */
+        .bannCon .banRight:hover span {
+            display: block;
+        }
+
+        .bannCon .banRight .btnRight {
+            right: 20px;
+        }
+
+        .bannCon .banRight .btnLeft {
+            left: 20px;
+        }
+
+        /* #endregion */

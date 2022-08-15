@@ -1,0 +1,54 @@
+        /* 搜索区域 */
+        /* #region */
+        .search {
+            background: #f2f5f4;
+        }
+
+        .searCon {
+            height: 102px;
+            padding-top: 30px;
+        }
+
+        .searCon .search {
+            width: 937px;
+            height: 47px;
+            margin-left: 133px;
+        }
+
+        .searCon .search .searchInp {
+            width: 794px;
+            height: 45px;
+            border: 1px solid #e8e8e8;
+            text-indent: 15px;
+        }
+
+        .searCon .search .btn {
+            width: 141px;
+            height: 47px;
+            /* 上下居中 */
+            line-height: 47px;
+            /* 左右居中 */
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            background: #00b38a;
+        }
+
+        .searCon .searList {
+            margin-left: 133px;
+            font-size: 12px;
+            margin-top: 12px;
+            display: flex;
+            justify-content: space-between;
+            width: 700px;
+        }
+
+        .searCon .searList li a {
+            color: #00b38a;
+        }
+
+        .searCon .searList .hot-search {
+            color: #777;
+        }
+
+        /* #endregion */

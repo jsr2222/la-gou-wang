@@ -1,0 +1,143 @@
+      /* footer区域 */
+      /* #region */
+      .footer {
+          border-top: 1px solid #ebebeb;
+          margin-top: 70px;
+          /* background: #fafafa; */
+
+      }
+
+      .footer .footer1 {
+          height: 286px;
+          padding-top: 50px;
+          display: flex;
+          justify-content: space-between;
+          /* background-color: #fff; */
+      }
+
+      .footer .footer1 .appBox {
+          width: 314px;
+          height: 170px;
+          margin-right: 130px;
+          border-right: 1px solid #e8e8e8;
+
+      }
+
+      .footer .footer1 .appBox .btnApp {
+          width: 180px;
+          height: 44px;
+          border: 1px solid #00b38a;
+          line-height: 44px;
+          text-align: center;
+          margin-bottom: 17px;
+      }
+
+      .footer .footer1 .appBox .btnApp span {
+          float: left;
+          width: 12px;
+          height: 15px;
+          background: url(img/sprite2.png) no-repeat;
+          margin-left: 38px;
+          margin-top: 14px;
+      }
+
+      .footer .footer1 .appBox .btnApp:nth-child(1) span {
+          background-position: -150px -220px;
+      }
+
+      .footer .footer1 .appBox .btnApp:nth-child(2) span {
+          background-position: -216px -54px;
+      }
+
+      .footer .footer1 .appBox .btnTxt {
+          font-size: 12px;
+          color: #555;
+      }
+
+      .footer .footer1 .appBox .btnTxt img {
+          display: inline-block;
+          margin-right: 5px;
+      }
+
+      .footer .footer1 .appBox .btnTxt img:nth-child(2) {
+          margin-left: 28px;
+      }
+
+      .footer .footer1 .right {
+          width: 800px;
+          display: flex;
+          justify-content: space-between;
+      }
+
+      .footer .footer1 dl dt {
+          font-size: 16px;
+          margin-bottom: 32px;
+          color: #555;
+      }
+
+      .footer .footer1 dl dd {
+          font-size: 12px;
+          margin-bottom: 15px;
+      }
+
+      .footer .footer1 .dlCen {
+          margin: 0px 170px;
+          color: #555;
+      }
+
+      .footer .footer2 {
+          height: 100px;
+          background: #fafafa;
+      }
+
+      .footer .footer2 .bottCon {
+          font-size: 12px;
+          height: 100px;
+          display: flex;
+          justify-content: space-between;
+      }
+
+      .footer .footer2 .bottCon .left {
+          width: 600px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .footer .footer2 .bottCon p span {
+          background: url("img/sprite2.png") no-repeat;
+      }
+
+      .footer .footer2 .bottCon .txtP2 span {
+          width: 16px;
+          height: 16px;
+          background-position: -150px -184px;
+
+      }
+
+      .footer .footer2 .bottCon .txtBox {
+          width: 186px;
+          height: 58px;
+          border: 1px solid #555;
+      }
+
+      .footer .footer2 .bottCon .txtBox span {
+          width: 20px;
+          height: 24px;
+          background: url("img/sprite2.png");
+          background-position: -132px -20px;
+          margin-top: 18px;
+          margin-left: 20px;
+          margin-right: 5px;
+      }
+
+      .footer .footer2 .bottCon .txtBox p {
+          margin-top: 6px;
+          margin-left: 10px;
+      }
+
+      .footer .footer2 .bottCon .imgBox {
+          margin-top: 50px;
+      }
+
+      /* #endregion */

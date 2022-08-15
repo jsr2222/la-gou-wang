@@ -1,0 +1,248 @@
+        /* 内容区域第一大块 */
+        /* #region */
+        .content .block1 {
+            margin-top: 44px;
+        }
+
+        .content .title .top1 {
+            height: 35px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .content .title .top1 a {
+            font-size: 15px;
+            color: #757478;
+        }
+
+        .content .title .top1 a:first-child {
+            margin-right: 60px;
+            padding-bottom: 13px;
+            border-bottom: 2px solid #000;
+            color: #000;
+        }
+
+        .content .title .top2 {
+            height: 65px;
+            font-size: 12px;
+        }
+
+        .content .title .top2 .logo {
+            width: 18px;
+            height: 18px;
+            background: #e6e6e6;
+            color: #fff;
+            margin-top: 24px;
+            /* 水平居中 */
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 14px;
+        }
+
+        .content .title .top2 .slogan {
+            color: #999;
+            height: 65px;
+            line-height: 65px;
+            margin-right: 56px;
+        }
+
+        .content .title .top2 a {
+            color: #00b38a;
+        }
+
+        .content .block1 {
+            margin-bottom: 50px;
+        }
+
+        .content .block1 .conBlock {
+            height: 640px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .content .block1 .conBlock li {
+            display: flex;
+            justify-content: space-between;
+            width: 1200px;
+
+        }
+
+        .content .block1 .conBlock li .conBox {
+            width: 351px;
+            height: 160px;
+            border: 1px solid #eaeeed;
+            padding: 23px 17px 17px 17px;
+        }
+
+        .content .block1 .conBlock li .conBox .job {
+            font-size: 15px;
+        }
+
+        .content .block1 .conBlock li .conBox .job .jobTxt {
+            color: #777;
+        }
+
+        .content .block1 .conBlock li .conBox .job .time {
+            font-size: 11px;
+            margin: 0px 8px;
+            color: #9999b2;
+        }
+
+        .content .block1 .conBlock li .conBox .job .money {
+            font-size: 12px;
+            color: #fa6041
+        }
+
+        .content .block1 .conBlock li .conBox .btn {
+            color: #777;
+            font-size: 12px;
+            margin: 10px 0px;
+        }
+
+        .content .block1 .conBlock li .conBox .pBor {
+            border-bottom: 1px dashed #e0e0e0;
+            padding-bottom: 18px;
+        }
+
+        .content .block1 .conBlock li .conBox .box {
+            display: block;
+            color: #9999b2;
+            font-size: 11px;
+            border: 1px solid #f0f0f0;
+            border-radius: 2px;
+            height: 26px;
+            width: 71px;
+            text-align: center;
+            line-height: 26px;
+            margin-right: 10px;
+        }
+
+        .content .block1 .conBlock li .conBox .imgBox {
+            padding-top: 12px;
+        }
+
+        .content .block1 .conBlock li .conBox .imgBox img {
+            width: 40px;
+            height: 40px;
+            padding-right: 18px;
+        }
+
+        .content .block1 .conBlock li .conBox .txt1 {
+            color: #555;
+            font-size: 12px;
+            margin-bottom: 6px;
+        }
+
+        .content .block1 .conBlock li .conBox .txt2 {
+            color: #9999b2;
+            font-size: 12px;
+        }
+
+        .content .more {
+            width: 388px;
+            height: 42px;
+            border: 1px solid #00b38a;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 42px;
+            color: #00b38a;
+        }
+
+        /* #endregion */
+
+        /* 内容区域第二大块 */
+        /* #region */
+        .content .block2 ul {
+            margin-bottom: 16px;
+        }
+
+        .content .block2 .conBlock2 li {
+            height: 270px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .content .block2 .conBlock2 .contentBox {
+            width: 246px;
+            height: 244px;
+            border: 1px solid #eeeeee;
+            padding: 12px 20px;
+            text-align: center;
+        }
+
+        .content .block2 .conBlock2 .contentBox img {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+
+        .content .block2 .conBlock2 .contentBox .txt1 {
+            font-size: 12px;
+            color: #999;
+            margin-top: 10px;
+            margin-bottom: 12px;
+        }
+
+        .content .block2 .conBlock2 .contentBox .txt2 {
+            font-size: 12px;
+            color: #555;
+            /* 实现超出部分内容省略（以下三句） */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* ============================== */
+            padding-bottom: 16px;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+
+        .content .block2 .conBlock2 .contentBox .listCon .box1 {
+            width: 72px;
+            height: 30px;
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            margin-top: 16px;
+        }
+
+        .content .block2 .conBlock2 .contentBox .listCon .line {
+            border-right: 1px solid #e0e0e0;
+        }
+
+        .content .block2 .conBlock2 .contentBox .listCon .box1 p {
+            color: #00b38a;
+        }
+
+        .block3 .line3 {
+            margin-top: 40px;
+        }
+
+        .content .block3 .content3 {
+            font-size: 12px;
+            padding-top: 30px;
+            width: 1200px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .content .block3 .content3 .left {
+            width: 800px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .content .block3 .content3 a {
+            color: #555;
+
+        }
+
+        .content .block3 .content3 .open {
+            color: #99a5c2;
+        }
+
+        .content .block3 .content3 .open img {
+            margin-top: 4px;
+            margin-left: 4px;
+        }
+
+        /* #endregion */
